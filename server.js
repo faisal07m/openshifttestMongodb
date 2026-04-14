@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
 });
 
 // API test (IMPORTANT for /api routing)
-app.get("/api", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.json({
     message: "✅ /api is working",
     time: new Date(),
