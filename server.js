@@ -14,8 +14,8 @@ const DB_HOST = process.env.DB_HOST || "mongo:27017";
 let MONGO_URL;
 
 if (DB_USER && DB_PASSWORD) {
- // MONGO_URL = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?authSource=${DB_NAME}`;
-  MONGO_URL = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:27017/${DB_NAME}?authSource=admin`;
+  MONGO_URL = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?authSource=${DB_NAME}`;
+ // MONGO_URL = `mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:27017/${DB_NAME}?authSource=admin`;
 } else {
   MONGO_URL = `mongodb://${DB_HOST}`;
 }
